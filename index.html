@@ -2,44 +2,120 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css">
+        rel="stylesheet" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Document</title>
 </head>
 <body>
-    <!-- <header class="header">
-        <div class="container header-container">
-            <nav class="header-navigation">
-                <a href="./index.html" class="header-logo">Web<span class="header-logo-studio">Studio</span></a>
-                <ul class="header-menu-list">
-                    <li class="header-menu-item"><a class="header-menu-link active" href="./index.html">Studio</a></li>
-                    <li class="header-menu-item"><a class="header-menu-link" href="">Portfolio</a></li>
-                    <li class="header-menu-item"><a class="header-menu-link" href="">Contacts</a></li>
+    <header class="header">
+        <div class="header-container container ">
+            <nav class="header-navigation main-nav-container">
+                <a href="./index.html" class="header-logo link">Web<span class="header-logo-studio">Studio</span></a>
+                <ul class=" list header-menu-list">
+                    <li class="header-menu-item"><a class="link header-menu-link active" href="./index.html">Studio</a></li>
+                    <li class="header-menu-item"><a class="link header-menu-link" href="">Portfolio</a></li>
+                    <li class="header-menu-item"><a class="link header-menu-link" href="">Contacts</a></li>
                 </ul>
             </nav>
+            <button type="button" class="open-menu-header-btn">
+                <svg width="24" height="24" class="icon-header-menu">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
          <address class="header-contacts">
-                <ul class="header-list">
+                <ul class="list header-list">
                     <li class="header-contacts-item">
-                        <a class ="header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        <a class ="link header-contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
                     </li>
                     <li class="header-contacts-item">
-                        <a class ="header-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+                        <a class ="link header-contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
                     </li>
                 </ul>
             </address>
         </div>
-    </header> -->
+
+
+        <div class="mobile-menu">
+            <div class="container mobile-menu-container">
+                <button type="button" class="modal-btn">
+                    <svg width="8" height="8" class="modal-btn-icon">
+                        <use href="./images/icons.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="list mobile-menu-list">
+                    <li class="mobile-menu-item">
+                        <a href="./index.html" class="link mobile-menu-link main-link">Studio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="" class="link mobile-menu-link">Portfolio</a>
+                    </li>
+                    <li class="mobile-menu-item">
+                        <a href="" class="link mobile-menu-link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <address class="mobile-menu-address">
+                    <ul class="list mobile-menu-address">
+                        <li class="mobile-menu-address-item">
+                            <a href="mailto:info@devstudio.com" class="link menu-contact-link">
+                                info@devstudio.com
+                            </a>
+                        </li>
+                        <li class="mobile-menu-address-item">
+                            <a href="tel:+110001111111" class="link menu-contact-link">
+                                +11 (000) 111-11-11
+                            </a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="list social-list">
+                    <li class="social-item">
+                        <a class="footer-svg-link" href="#">
+                            <svg class="footer-svg" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                                <use href="./images/icons#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="footer-svg-link" href="#">
+                            <svg class="footer-svg" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                                <use href="./images/icons#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="footer-svg-link" href="#">
+                            <svg class="footer-svg" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                                <use href="./images/icons#icon-facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="footer-svg-link" href="#">
+                            <svg class="footer-svg" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                                <use href="./images/icons#icon-linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header> 
 
    <main>
-        <!-- <section class="solutions">
+      <section class="solutions section">
             <div class="container solutions-container">
                 <h1 class="solutions-title">
                     Effective Solutions
@@ -47,11 +123,11 @@
                 </h1>
                 <button type="button" class="solutions-button">Order Service</button>
             </div>
-        </section> -->
-        <section class="featuters">
+        </section> 
+        <section class="featuters section">
             <div class="container featuters-container">
                 <h2  class="visually-hidden">Featuters</h2>
-                <ul class="featuters-list">
+                <ul class="list featuters-list main-desc-list-container">
                     <li class="featuters-item">
                         <div class="container-featuters-icon">
                             <svg class="icon-particularity" width="64" height="64">
@@ -112,18 +188,18 @@
             </div>
         </section>
 
-        <section class="team">
-            <div class="container ">
+        <section class="team section">
+            <div class="container">
                  <h2 class="team-title">Our Team</h2>
-                 <ul class="team-list">
+                 <ul class="team-list list main-team-container">
                         <li class="team-item">
                             <img src="./images/mark.jpg" alt="Photo Mark Guerrero" width="264" height="260" class="team-img">
                             <div class="container-team-item">
                                 <h3 class="team-subtitle">Mark Guerrero</h3>
                                 <p class="team-item-text">Product Designer</p>
-                                <ul class="team-social-list">
+                                <ul class="list team-social-list">
                                     <li class="team-social-item">
-                                        <a class="team-social-link"
+                                        <a class="link team-social-link"
                                         href=""
                                         target="_blank"
                                         rel="noopener noreferrer">
@@ -134,7 +210,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer" >
@@ -145,7 +221,7 @@
                                        </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer">
@@ -156,7 +232,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer">
@@ -178,7 +254,7 @@
                                 <p class="team-item-text">Frontend Developer</p>
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href=""
                                          target="_blank" 
                                          rel="noopener noreferrer">
@@ -189,7 +265,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer">
@@ -200,7 +276,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href=""
                                          target="_blank"
                                           rel="noopener noreferrer">
@@ -211,7 +287,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link"
+                                        <a class="link team-social-link"
                                          href=""
                                           target="_blank"
                                           rel="noopener noreferrer">
@@ -232,7 +308,7 @@
                                 <p class="team-item-text">Marketing</p>
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
-                                        <a class="team-social-link"
+                                        <a class="link team-social-link"
                                          href="" target="_blank" rel="noopener noreferrer">
                                             <svg class="team-social-icon" width="16" height="16">
                                                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
@@ -241,7 +317,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer">
@@ -252,7 +328,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank" 
                                         rel="noopener noreferrer">
@@ -263,7 +339,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href="" 
                                         target="_blank"
                                          rel="noopener noreferrer">
@@ -284,7 +360,7 @@
                                 <p class="team-item-text">UI Designer</p>
                                 <ul class="team-social-list">
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href=""
                                          target="_blank" 
                                          rel="noopener noreferrer">
@@ -295,7 +371,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href=""
                                          target="_blank" 
                                          rel="noopener noreferrer">
@@ -306,7 +382,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href=""  
                                         target="_blank" 
                                         rel="noopener noreferrer">
@@ -317,7 +393,7 @@
                                         </a>
                                     </li>
                                     <li class="team-social-item">
-                                        <a class="team-social-link" 
+                                        <a class="link team-social-link" 
                                         href=""
                                          target="_blank"
                                           rel="noopener noreferrer">
@@ -445,7 +521,7 @@
         </section>
 
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class=" container footer-container">
             <div class="logo-container">
                 <a href="./index.html" class="footer-logo"> Web<span class="footer-logo-studio">Studio</span></a>
@@ -455,7 +531,7 @@
             </div>
             <div class="social">
                 <p class="social-text">Social media</p>
-                <ul class="social-list">
+                <ul class="list social-list">
                     <li class="social-item">
                         <a class="footer-svg-link" href="#">
                             <svg class="footer-svg" width="24" height="24">
@@ -505,8 +581,8 @@
             </div>
         </div>
 
-    </footer> -->
-    <div class="backdrop ">
+    </footer>
+    <div class="backdrop">
         <div class="modal">
          <button type="button" class="modal-btn">
             <svg class="modal-btn-icon" width="8" height="8">
